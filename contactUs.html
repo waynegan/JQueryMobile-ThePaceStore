@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- ---------------------
+	Name:Wayne
+	Date:08/06/2015
+---------------------- -->
+<html lang="en">
+<head>
+    <title>The Pace Store</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="themes/Pace.css"/>
+    <link rel="stylesheet" href="themes/jqm-icon-pack-fa.css"/>
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+<div data-role="page" data-title="CONTACT US" id="index">
+    <header data-role="header" data-position="fixed">
+        <!--<h1>Vecta Corp.</h1>-->
+        <a data-role="button" data-rel="back" data-icon="arrow-left" data-wrapperels="span"><span
+                class="ui-btn-inner"><span
+                class="ui-btn-text">Back</span><span class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span></a>
+
+        <h1 style="margin: 0px; margin-top: 3px; margin-bottom: 2px; padding: 4px;" class="ui-title" role="heading"
+            aria-level="1">
+            <a href="index.html" class="ui-link"><img height="28px" src="images/logo.png"
+                                                      alt="Pace Store"></a>
+        </h1>
+        <a data-role="button" data-icon="home" id="idb" href="index.html" data-wrapperels="span"><span
+                class="ui-btn-inner"><span class="ui-btn-text">Main</span><span
+                class="ui-icon ui-icon-home ui-icon-shadow">&nbsp;</span></span></a>
+
+    </header>
+
+    <section data-role="content">
+        <h3>Customer Feedback</h3>
+
+        <form action="contactUs.html" method="post" data-ajax="false">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <div class="ui-field-contain">
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+                        <legend>Gender:</legend>
+                        <label>
+                            <input type="radio" name="currentinstall" id="no" value="No" checked="checked"/>
+                            Male</label>
+                        <label>
+                            <input type="radio" name="currentinstall" id="yes" value="Yes"/>
+                            Female</label>
+                    </fieldset>
+                </div>
+
+
+            <div class="ui-field-contain">
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Which kind of sports products you interested in?</legend>
+                    <input type="checkbox" name="shoes" id="shoes">
+                    <label for="shoes">shoes</label>
+                    <input type="checkbox" name="Armband" id="Armband">
+                    <label for="Armband">Armband</label>
+                    <input type="checkbox" name="GPS" id="GPS">
+                    <label for="GPS">GPS watch</label>
+                </fieldset>
+            </div>
+
+
+            <div class="ui-field-contain">
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Current Age group?</legend>
+                    <input type="radio" name="infrastructure" id="Youth">
+                    <label for="Youth">Youth</label>
+                    <input type="radio" name="infrastructure" id="Middle-aged">
+                    <label for="Middle-aged">Middle-aged</label>
+                    <input type="radio" name="infrastructure" id="Seniors">
+                    <label for="Seniors">Seniors</label>
+                </fieldset>
+            </div>
+
+            <div class="ui-field-contain">
+                <label for="hearaboutus" class="select">How did you hear about us?</label>
+                <select name="hearaboutus" id="hearaboutus" data-native-menu="false">
+                    <option value="internet">Internet Ad</option>
+                    <option value="magazine">Magazine Ad</option>
+                    <option value="tv">TV Ad</option>
+                    <option value="word">Others</option>
+                </select>
+            </div>
+
+            <div class="ui-field-contain">
+                <label for="questions">Comments:</label>
+                <textarea name="questions" id="questions"></textarea>
+            </div>
+            <div class="ui-field-contain">
+            <label for="size">How many kilometers you run per week:</label>
+            <input type="range" name="size" id="size" min="0" max="1000" value="1" step="1" data-highlight="true">
+            </div>
+
+            <a href="#popupCloseLeft" data-rel="popup"  data-transition="pop" data-position-to="window"><input type="submit" value="Submit"></a>
+
+        </form>
+        <div align="center" class="copyright">
+            <p  >Copyright &copy; 2015 The Pace Store</p>
+        </div>
+    </section>
+    <div data-role="popup" id="popupCloseLeft" class="ui-content" >
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+        <p>Your feedback has been successfully send to us</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar" data-iconpos="bottom">
+            <ul>
+                <li><a href="contactUs.html" data-prefetch="true" data-transition="slide" data-icon="info">CONTACT US</a></li>
+                <li><a href="products.html" data-prefetch="true" data-transition="turn" data-icon="list-ol">PRODUCTS</a>
+                </li>
+                <li><a href="notices.html" data-prefetch="true" data-transition="slide" data-icon="bullhorn">NOTICES</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
